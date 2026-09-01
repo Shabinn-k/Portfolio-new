@@ -26,14 +26,6 @@ export default function ProjectCard({ project }: { project: Project }) {
 
         <div className="flex justify-between items-start gap-4">
           <div className="flex flex-col gap-2">
-            <h3 className="text-2xl font-bold text-foreground flex items-center gap-3">
-              {project.title}
-              {project.featured && (
-                <span className="text-[10px] uppercase tracking-wider font-bold bg-primary/10 text-primary px-2.5 py-1 rounded-full border border-primary/20">
-                  Featured
-                </span>
-              )}
-            </h3>
             <p className="text-muted-foreground leading-relaxed max-w-3xl">
               {project.description}
             </p>
