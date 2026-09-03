@@ -20,17 +20,23 @@ export default function ProjectCard({ project }: { project: Project }) {
         isExpanded ? "border-primary/50 shadow-[0_0_40px_rgba(132,204,22,0.15)]" : "border-border/50 hover:border-primary/30"
       )}
     >
+      {/* Top Gradient Line */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-transparent via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
       <div className="p-6 md:p-8 flex flex-col gap-5 relative z-10">
-
+        
+        {/* Header Row */}
         <div className="flex justify-between items-start gap-4">
           <div className="flex flex-col gap-2">
+            <h3 className="text-2xl font-bold text-foreground flex items-center gap-3">
+              {project.title}
+            </h3>
             <p className="text-muted-foreground leading-relaxed max-w-3xl">
               {project.description}
             </p>
           </div>
-
+          
+          {/* Action Icons */}
           <div className="flex items-center gap-3 shrink-0">
             {project.githubUrl && (
               <a href={project.githubUrl} target="_blank" rel="noreferrer" className="p-2 bg-muted/50 rounded-full text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
@@ -45,6 +51,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           </div>
         </div>
 
+        {/* Tech Stack */}
         <div className="flex flex-wrap gap-2 mt-2">
           {project.techStack.map((tech) => (
             <span key={tech} className="text-xs font-mono px-3 py-1.5 rounded-md bg-muted/40 border border-border/50 text-muted-foreground">
@@ -53,6 +60,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           ))}
         </div>
 
+        {/* Expand Button */}
         <div className="pt-4 border-t border-border/50 mt-2 flex items-center justify-between">
           <button
             onClick={() => setIsExpanded(!isExpanded)}
@@ -66,6 +74,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           </button>
         </div>
 
+        {/* Expanded Content */}
         <AnimatePresence>
           {isExpanded && (
             <motion.div
@@ -92,7 +101,7 @@ export default function ProjectCard({ project }: { project: Project }) {
             </motion.div>
           )}
         </AnimatePresence>
-
+        
       </div>
     </motion.div>
   );
