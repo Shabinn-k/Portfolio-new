@@ -35,8 +35,7 @@ export const projects: Project[] = [
     description: "A full-stack AI platform that leverages Google's Gemini API to provide intelligent, context-aware responses and text generation.",
     techStack: ["Go", "Gin", "Gemini API", "React", "Next.js", "Tailwind CSS"],
     githubUrl: "https://github.com/Shabinn-k/shabin-ai", 
-    liveUrl: "", 
-    featured: true,
+    liveUrl: "",  
     architectureNotes: [
       "Built a decoupled architecture with a Go (Gin) backend to securely handle API requests to the Gemini API, keeping the API keys hidden from the client.",
       "Developed a responsive React/Next.js frontend with a focus on smooth UI interactions and real-time text rendering.",
