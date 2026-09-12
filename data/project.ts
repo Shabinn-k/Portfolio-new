@@ -7,8 +7,7 @@ export const projects: Project[] = [
     description: "A full-stack e-commerce platform specializing in premium women's clothing, featuring secure checkout and inventory management.",
     techStack: ["Go", "Gin", "PostgreSQL", "GORM", "Redis", "React", "Tailwind CSS", "Stripe/Razorpay"],
     githubUrl: "https://github.com/shabinn-k/sootika",
-    liveUrl: "https://sootika.com",
-    featured: true,
+    liveUrl: "https://sootika.com", 
     architectureNotes: [
       "Engineered a normalized PostgreSQL schema handling products, variants, and user carts, utilizing GORM transactions to ensure ACID compliance during checkout.",
       "Implemented Redis caching for high-read product catalogs and filtering endpoints, significantly reducing database load during peak traffic.",
