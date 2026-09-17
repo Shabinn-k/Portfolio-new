@@ -7,5 +7,4 @@ export interface Project {
   liveUrl?: string;
   image?: string;
   architectureNotes: string[];
-  featured: boolean;
 }

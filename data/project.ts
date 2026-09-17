@@ -22,7 +22,7 @@ export const projects: Project[] = [
     description: "A real-time developer collaboration platform designed for high-throughput messaging and code sharing.",
     techStack: ["Go", "Gin", "PostgreSQL", "GORM", "Redis", "gRPC", "WebSockets", "Docker"],
     githubUrl: "https://github.com/shabinn-k/devsync",
-    featured: false,
+    featured: true,
     architectureNotes: [
       "Implemented WebSocket connections in Go to handle real-time bi-directional communication.",
       "Used Redis for caching active sessions and Pub/Sub for scaling WebSocket servers.",
