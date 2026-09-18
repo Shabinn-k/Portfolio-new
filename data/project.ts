@@ -6,7 +6,7 @@ export const projects: Project[] = [
     title: "Sootika",
     description: "A full-stack e-commerce platform specializing in premium women's clothing, featuring secure checkout and inventory management.",
     techStack: ["Go", "Gin", "PostgreSQL", "GORM", "Redis", "React", "Tailwind CSS", "Stripe/Razorpay"],
-    githubUrl: "https://github.com/yourusername/sootika",
+    githubUrl: "https://github.com/shabinn-k/sootika",
     liveUrl: "https://sootika.com",
     featured: true,
     architectureNotes: [
@@ -37,7 +37,7 @@ export const projects: Project[] = [
     description: "A full-stack AI platform that leverages Google's Gemini API to provide intelligent, context-aware responses and text generation.",
     techStack: ["Go", "Gin", "Gemini API", "React", "Next.js", "Tailwind CSS"],
     githubUrl: "https://github.com/Shabinn-k/shabin-ai", 
-    liveUrl: "", // Add live link here if you host the frontend
+    liveUrl: "", 
     featured: true,
     architectureNotes: [
       "Built a decoupled architecture with a Go (Gin) backend to securely handle API requests to the Gemini API, keeping the API keys hidden from the client.",
