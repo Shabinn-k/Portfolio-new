@@ -36,7 +36,7 @@ export const projects: Project[] = [
     title: "Shabin-AI",
     description: "A full-stack AI platform that leverages Google's Gemini API to provide intelligent, context-aware responses and text generation.",
     techStack: ["Go", "Gin", "Gemini API", "React", "Next.js", "Tailwind CSS"],
-    githubUrl: "https://github.com/Shabinn-k/shabin-ai", // Added your real link!
+    githubUrl: "https://github.com/Shabinn-k/shabin-ai", 
     liveUrl: "", // Add live link here if you host the frontend
     featured: true,
     architectureNotes: [
