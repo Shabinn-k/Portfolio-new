@@ -21,7 +21,7 @@ export const projects: Project[] = [
     title: "DevSync",
     description: "A real-time developer collaboration platform designed for high-throughput messaging and code sharing.",
     techStack: ["Go", "Gin", "PostgreSQL", "GORM", "Redis", "gRPC", "WebSockets", "Docker"],
-    githubUrl: "https://github.com/yourusername/devsync",
+    githubUrl: "https://github.com/shabinn-k/devsync",
     featured: false,
     architectureNotes: [
       "Implemented WebSocket connections in Go to handle real-time bi-directional communication.",
