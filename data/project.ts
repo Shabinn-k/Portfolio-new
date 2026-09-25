@@ -31,7 +31,7 @@ export const projects: Project[] = [
       "Secured APIs using JWT authentication and middleware."
     ]
   },
-    {
+  {
     id: "shabin-ai",
     title: "Shabin-AI",
     description: "A full-stack AI platform that leverages Google's Gemini API to provide intelligent, context-aware responses and text generation.",
