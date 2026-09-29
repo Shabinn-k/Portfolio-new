@@ -30,5 +30,20 @@ export const projects: Project[] = [
       "Designed a normalized PostgreSQL schema using GORM, with indexes optimized for high-read queries.",
       "Secured APIs using JWT authentication and middleware."
     ]
+  },
+    {
+    id: "shabin-ai",
+    title: "Shabin-AI",
+    description: "A full-stack AI platform that leverages Google's Gemini API to provide intelligent, context-aware responses and text generation.",
+    techStack: ["Go", "Gin", "Gemini API", "React", "Next.js", "Tailwind CSS"],
+    githubUrl: "https://github.com/Shabinn-k/shabin-ai", // Added your real link!
+    liveUrl: "", // Add live link here if you host the frontend
+    featured: true,
+    architectureNotes: [
+      "Built a decoupled architecture with a Go (Gin) backend to securely handle API requests to the Gemini API, keeping the API keys hidden from the client.",
+      "Developed a responsive React/Next.js frontend with a focus on smooth UI interactions and real-time text rendering.",
+      "Engineered the backend to handle prompt engineering and context management before sending requests to the AI model.",
+      "Implemented structured error handling to gracefully manage API rate limits and network failures."
+    ]
   }
 ];
