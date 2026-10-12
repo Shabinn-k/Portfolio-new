@@ -7,10 +7,10 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     title: "Backend",
-    skills: ["Go (Golang)", "Gin","Fiber", "REST APIs", "gRPC", "WebSockets"]
+    skills: ["Go (Golang)", "Gin", "Fiber", "REST APIs", "gRPC", "WebSockets"]
   },
   {
     title: "Databases & Tools",
-    skills: ["PostgreSQL", "GORM", "Redis", "Docker","AWS", "Git"]
+    skills: ["PostgreSQL", "GORM", "Redis", "Docker", "AWS", "Git"]
   }
 ];

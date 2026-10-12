@@ -5,9 +5,9 @@ export const projects: Project[] = [
     id: "sootika",
     title: "Sootika",
     description: "A full-stack e-commerce platform specializing in premium women's clothing, featuring secure checkout and inventory management.",
-    techStack: ["Go", "Gin", "PostgreSQL", "GORM", "Redis", "React", "Tailwind CSS", "Stripe/Razorpay"], 
-    githubUrl: "https://github.com/yourusername/sootika", 
-    liveUrl: "https://sootika.com", 
+    techStack: ["Go", "Gin", "PostgreSQL", "GORM", "Redis", "React", "Tailwind CSS", "Stripe/Razorpay"],
+    githubUrl: "https://github.com/yourusername/sootika",
+    liveUrl: "https://sootika.com",
     featured: true,
     architectureNotes: [
       "Engineered a normalized PostgreSQL schema handling products, variants, and user carts, utilizing GORM transactions to ensure ACID compliance during checkout.",
@@ -21,8 +21,8 @@ export const projects: Project[] = [
     title: "DevSync",
     description: "A real-time developer collaboration platform designed for high-throughput messaging and code sharing.",
     techStack: ["Go", "Gin", "PostgreSQL", "GORM", "Redis", "gRPC", "WebSockets", "Docker"],
-    githubUrl: "https://github.com/yourusername/devsync", 
-    featured: false, 
+    githubUrl: "https://github.com/yourusername/devsync",
+    featured: false,
     architectureNotes: [
       "Implemented WebSocket connections in Go to handle real-time bi-directional communication.",
       "Used Redis for caching active sessions and Pub/Sub for scaling WebSocket servers.",
