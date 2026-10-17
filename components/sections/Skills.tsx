@@ -11,12 +11,12 @@ export default function Skills() {
   return (
     <section id="skills" className="py-24 bg-muted/10 border-y border-border/50 relative">
       <div className="container mx-auto px-6 md:px-12">
-        <SectionHeading 
-          title="Technical Arsenal" 
+        <SectionHeading
+          title="Technical Arsenal"
           subtitle="The tools and technologies I use to build scalable systems."
           align="center"
         />
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
           {skillCategories.map((category, index) => {
             const Icon = icons[index];
