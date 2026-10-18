@@ -9,8 +9,8 @@ export default function Experience() {
   return (
     <section id="experience" className="py-24 relative bg-background">
       <div className="container mx-auto px-6 md:px-12 max-w-4xl">
-        <SectionHeading 
-          title="Experience & Education" 
+        <SectionHeading
+          title="Experience & Education"
           subtitle="My professional journey and academic background."
           align="center"
         />
@@ -30,9 +30,8 @@ export default function Experience() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ duration: 0.5 }}
-                  className={`relative flex flex-col md:flex-row items-start ${
-                    isEven ? "md:flex-row-reverse" : ""
-                  }`}
+                  className={`relative flex flex-col md:flex-row items-start ${isEven ? "md:flex-row-reverse" : ""
+                    }`}
                 >
                   <div className="absolute left-4 md:left-1/2 w-10 h-10 rounded-full bg-background border-2 border-primary -translate-x-1/2 flex items-center justify-center z-10 shadow-[0_0_15px_rgba(132,204,22,0.3)]">
                     <Icon className="w-5 h-5 text-primary" />
@@ -45,7 +44,7 @@ export default function Experience() {
                       </span>
                       <h3 className="text-xl font-bold text-foreground">{exp.role}</h3>
                       <h4 className="text-muted-foreground font-medium mb-4">{exp.company}</h4>
-                      
+
                       <ul className="space-y-2">
                         {exp.description.map((item, i) => (
                           <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">

@@ -10,9 +10,9 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
+
     if (status === "loading" || status === "success") return;
-    
+
     setStatus("loading");
 
     const formData = new FormData(e.currentTarget);
@@ -46,13 +46,13 @@ export default function Contact() {
   return (
     <section id="contact" className="py-24 relative bg-muted/5">
       <div className="container mx-auto px-6 md:px-12 max-w-4xl">
-        <SectionHeading 
-          title="Get In Touch" 
+        <SectionHeading
+          title="Get In Touch"
           subtitle="Looking for a developer? Let's build something scalable."
           align="center"
         />
-        
-        <motion.form 
+
+        <motion.form
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -62,56 +62,55 @@ export default function Contact() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
               <label className="text-sm font-medium text-foreground">Name</label>
-              <input 
-                required 
-                type="text" 
+              <input
+                required
+                type="text"
                 name="name"
                 disabled={status === "loading" || status === "success"}
-                className="w-full bg-muted/20 border border-border rounded-md px-4 py-3 text-sm focus:outline-none focus:border-primary/50 transition-colors disabled:opacity-50" 
-                placeholder="John Doe" 
+                className="w-full bg-muted/20 border border-border rounded-md px-4 py-3 text-sm focus:outline-none focus:border-primary/50 transition-colors disabled:opacity-50"
+                placeholder="John Doe"
               />
             </div>
             <div className="space-y-2">
               <label className="text-sm font-medium text-foreground">Email</label>
-              <input 
-                required 
-                type="email" 
+              <input
+                required
+                type="email"
                 name="email"
                 disabled={status === "loading" || status === "success"}
-                className="w-full bg-muted/20 border border-border rounded-md px-4 py-3 text-sm focus:outline-none focus:border-primary/50 transition-colors disabled:opacity-50" 
-                placeholder="john@example.com" 
+                className="w-full bg-muted/20 border border-border rounded-md px-4 py-3 text-sm focus:outline-none focus:border-primary/50 transition-colors disabled:opacity-50"
+                placeholder="john@example.com"
               />
             </div>
           </div>
-          
+
           <div className="space-y-2">
             <label className="text-sm font-medium text-foreground">Message</label>
-            <textarea 
-              required 
-              rows={4} 
+            <textarea
+              required
+              rows={4}
               name="message"
               disabled={status === "loading" || status === "success"}
-              className="w-full bg-muted/20 border border-border rounded-md px-4 py-3 text-sm focus:outline-none focus:border-primary/50 transition-colors resize-none disabled:opacity-50" 
-              placeholder="Tell me about your project..." 
+              className="w-full bg-muted/20 border border-border rounded-md px-4 py-3 text-sm focus:outline-none focus:border-primary/50 transition-colors resize-none disabled:opacity-50"
+              placeholder="Tell me about your project..."
             />
           </div>
 
           <div className="pt-2 flex justify-center">
-            <motion.button 
-              type="submit" 
+            <motion.button
+              type="submit"
               disabled={status === "loading" || status === "success"}
               layout
-              className={`relative flex items-center justify-center gap-2 px-8 py-3 rounded-md font-semibold transition-all duration-300 overflow-hidden ${
-                status === "success" 
-                  ? "bg-green-500 text-white w-32" 
+              className={`relative flex items-center justify-center gap-2 px-8 py-3 rounded-md font-semibold transition-all duration-300 overflow-hidden ${status === "success"
+                  ? "bg-green-500 text-white w-32"
                   : status === "error"
-                  ? "bg-red-500 text-white w-full"
-                  : "bg-primary text-primary-foreground hover:bg-primary/90 w-full md:w-auto"
-              }`}
+                    ? "bg-red-500 text-white w-full"
+                    : "bg-primary text-primary-foreground hover:bg-primary/90 w-full md:w-auto"
+                }`}
             >
               <AnimatePresence mode="wait" initial={false}>
                 {status === "idle" && (
-                  <motion.div 
+                  <motion.div
                     key="idle"
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -123,7 +122,7 @@ export default function Contact() {
                 )}
 
                 {status === "loading" && (
-                  <motion.div 
+                  <motion.div
                     key="loading"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -135,7 +134,7 @@ export default function Contact() {
                 )}
 
                 {status === "success" && (
-                  <motion.div 
+                  <motion.div
                     key="success"
                     initial={{ scale: 0, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
@@ -148,7 +147,7 @@ export default function Contact() {
                 )}
 
                 {status === "error" && (
-                  <motion.div 
+                  <motion.div
                     key="error"
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
