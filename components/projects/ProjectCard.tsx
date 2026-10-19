@@ -23,7 +23,7 @@ export default function ProjectCard({ project }: { project: Project }) {
       <div className="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-transparent via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
       <div className="p-6 md:p-8 flex flex-col gap-5 relative z-10">
-        
+
         <div className="flex justify-between items-start gap-4">
           <div className="flex flex-col gap-2">
             <h3 className="text-2xl font-bold text-foreground flex items-center gap-3">
@@ -38,7 +38,7 @@ export default function ProjectCard({ project }: { project: Project }) {
               {project.description}
             </p>
           </div>
-          
+
           <div className="flex items-center gap-3 shrink-0">
             {project.githubUrl && (
               <a href={project.githubUrl} target="_blank" rel="noreferrer" className="p-2 bg-muted/50 rounded-full text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
@@ -100,7 +100,7 @@ export default function ProjectCard({ project }: { project: Project }) {
             </motion.div>
           )}
         </AnimatePresence>
-        
+
       </div>
     </motion.div>
   );
