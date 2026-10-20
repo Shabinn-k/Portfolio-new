@@ -19,7 +19,7 @@ function ScrollHandler() {
           const element = document.querySelector(anchor.hash);
           if (element && lenis) {
             lenis.scrollTo(element, {
-              offset: -80, 
+              offset: -80,
               duration: 1.5,
             });
           }

@@ -39,9 +39,9 @@ export default function Navbar() {
         )}
       >
         <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
-         <Link href="/" className="text-xl font-bold text-foreground tracking-tighter hover:text-primary transition-colors">
-  SHABIN<span className="text-primary">.</span>
-</Link>
+          <Link href="/" className="text-xl font-bold text-foreground tracking-tighter hover:text-primary transition-colors">
+            SHABIN<span className="text-primary">.</span>
+          </Link>
 
           <nav className="hidden md:flex items-center gap-8">
             {links.map((link) => (
@@ -70,9 +70,9 @@ export default function Navbar() {
         </div>
       </motion.header>
 
-      <MobileMenu 
-        isOpen={isMobileMenuOpen} 
-        onClose={() => setIsMobileMenuOpen(false)} 
+      <MobileMenu
+        isOpen={isMobileMenuOpen}
+        onClose={() => setIsMobileMenuOpen(false)}
       />
     </>
   );

@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-border/50 bg-background py-12 relative z-10">
       <div className="container mx-auto px-6 md:px-12 flex flex-col items-center justify-center gap-6">
-        
+
         <div className="flex flex-col items-center gap-2 text-center">
           <Link href="/" className="text-2xl font-bold tracking-tighter hover:text-primary transition-colors">
             SHABIN MUHAMMED K<span className="text-primary">.</span>
@@ -22,7 +22,7 @@ export default function Footer() {
               <path d="M9 18c-4.51 2-5-2-7-2" />
             </svg>
           </a>
-          
+
           <a href="https://linkedin.com/in/shabinn-k" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-muted/50 text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
@@ -39,7 +39,7 @@ export default function Footer() {
         <div className="pt-6 mt-2 border-t border-border/50 w-full text-center text-xs text-muted-foreground">
           <p>© 2026 Shabin. All rights reserved.</p>
         </div>
-        
+
       </div>
     </footer>
   );
