@@ -16,8 +16,8 @@ export default function Terminal() {
       <div className="p-4 text-sm font-mono text-muted-foreground">
         <p className="text-primary">➜ ~ go run main.go</p>
         <p className="text-white mt-2">Data processed</p>
-        <motion.span 
-          animate={{ opacity: [1, 0] }} 
+        <motion.span
+          animate={{ opacity: [1, 0] }}
           transition={{ repeat: Infinity, duration: 0.8 }}
           className="inline-block w-2 h-4 bg-primary mt-2"
         />
