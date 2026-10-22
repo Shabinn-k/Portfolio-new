@@ -20,7 +20,7 @@ const codeLines = [
 
 export default function CodeEditor() {
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, delay: 0.2 }}
@@ -34,7 +34,7 @@ export default function CodeEditor() {
         </div>
         <div className="ml-4 text-xs text-muted-foreground font-mono">main.go</div>
       </div>
-      
+
       <div className="p-4 text-sm font-mono leading-relaxed overflow-x-auto">
         {codeLines.map((line, i) => (
           <div key={i} className="flex">
