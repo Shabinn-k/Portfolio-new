@@ -6,7 +6,7 @@ import CustomCursor from "@/components/ui/CustomCursor";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 });
@@ -21,9 +21,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return ( 
+  return (
     <html lang="en" className={`${inter.variable} dark`} suppressHydrationWarning>
-     
+
       <body className="min-h-screen flex flex-col bg-background text-foreground" suppressHydrationWarning>
         <CustomCursor />
         <SmoothScroll>
