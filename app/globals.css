@@ -13,8 +13,8 @@
 
 @layer base {
   :root {
-    --background: 0 0% 3%; 
-    --foreground: 0 0% 98%; 
+    --background: 0 0% 3%;
+    --foreground: 0 0% 98%;
     --muted: 160 40% 8%;
     --muted-foreground: 160 20% 65%;
     --primary: 84 81% 44%;
@@ -24,9 +24,10 @@
   }
 
   * {
-    @apply border-border; /* Now this will work because of the @theme block */
+    @apply border-border;
+    /* Now this will work because of the @theme block */
   }
-  
+
   body {
     @apply bg-background text-foreground antialiased selection:bg-primary/30 selection:text-primary-foreground;
   }
@@ -40,7 +41,19 @@
 }
 
 /* Custom Scrollbar */
-::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background: hsl(var(--background)); }
-::-webkit-scrollbar-thumb { background: hsl(var(--muted)); border-radius: 4px; }
-::-webkit-scrollbar-thumb:hover { background: hsl(var(--primary)); }
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary));
+}
